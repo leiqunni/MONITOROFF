@@ -1,0 +1,80 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>MONITOROFF</title>
+<style type="text/css">
+<!--
+code {
+/*background-color:#e7ebef;*/
+}
+pre {
+background-color:#e7ebef;
+}
+
+-->
+</style>
+</head>
+<body>
+
+<h1>MONITOROFF</h1>
+
+<h3>version 1.0.0 2016/09/06</h3>
+
+<h2>Overview</h2>
+<p>
+MONITOROFF is tool to turn off monitor's power.
+Click to monitor is going into power saving mode.
+</p>
+
+<h2>Programming langage</h2>
+<p>
+Visual Basic .NET
+</p>
+
+<h2>System requirements</h2>
+<p>
+.NET Framework 4.6 later
+</p>
+
+<h2>About project</h2>
+<p>
+This application was wrote as a study for turn off monitor.
+and the code is like this.<br>
+<pre>
+<code>
+Private Const WM_SYSCOMMAND = &H112
+Private Const SC_MONITORPOWER = &HF170
+
+Private Const MONITOR_ON = -1
+Private Const MONITOR_OFF = 2
+Private Const MONITOR_STANDBY = 1
+
+Private Sub btnTurnOff_Click(sender As Object, e As EventArgs) Handles btnTurnOff.Click
+	PostMessage(Me.Handle, WM_SYSCOMMAND, SC_MONITORPOWER, MONITOR_OFF)
+	End
+End Sub
+</code>
+</pre>
+
+Please ask me, turn on monitor power when GPU working (etc. GPGPU),
+or want to add function.<br>
+</p>
+
+<h2>License</h2>
+<p>
+Simplified BSD License (BSD).
+</p>
+
+<h2>Author</h2>
+<p>
+<a href="mailto:leiqunni@gmail.com">leiqunni@gmail.com</a><br>
+<a href="https://twitter.com/leiqunni">@leiqunni</a>
+</p>
+
+<h2>Contact</h2>
+<p>
+<a href="https://monitoroff.codeplex.com/">https://monitoroff.codeplex.com/</a>
+</p>
+
+</body>
+</html>
