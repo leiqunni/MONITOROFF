@@ -5,7 +5,7 @@ MONITOROFF is a tool to turn off monitor's power.
 ## Project Description
 
 This code is for code studying.
-This is written by Visual Basic.NET and .Net 4.6.
+This is written by Visual Basic .NET and .NET 4.6.
 
 This application's function is only this.
 
